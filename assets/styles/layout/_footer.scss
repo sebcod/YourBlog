@@ -1,0 +1,13 @@
+footer {
+    @include whidthCenter;
+    height: 500px;
+    background-color: $backgroundColor2;
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+    @media screen and (max-width: $mobileMediaWhidth) {
+        @include mobileWhidthCenter;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+}

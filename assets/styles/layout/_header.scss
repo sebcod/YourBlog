@@ -1,0 +1,43 @@
+header {
+    height: 100vh;
+    @include whidthCenter;
+    position: relative;
+    color: $colorText1;
+    @include centerColumn;
+    gap: 50px;
+
+    h1 {
+        text-transform: uppercase;
+        font-size: 3rem;
+        width: 400px;
+        font-family: $font1;
+        font-weight: bold;
+    }
+
+    p {
+        font-style: italic;
+    }
+
+    .flecheBas {
+        border: solid 1px;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        transform: scale(170%);
+        @include center;
+
+        &:hover {
+            transform: scale(200%);
+            transition: transform 330ms ease-in-out;
+            cursor: pointer;
+        }
+
+        &:not(:hover) {
+            transition: transform 330ms ease-in-out;
+        }
+    }
+
+    @media screen and (max-width: $mobileMediaWhidth) {
+        @include mobileWhidthCenter;
+    }
+}

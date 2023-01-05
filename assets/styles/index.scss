@@ -1,0 +1,10 @@
+@import "../styles/_settings";
+@import "../styles/layout/_header";
+@import "../styles/layout/_navbar";
+@import "../styles/layout/main";
+@import "../styles/layout/_footer";
+
+body {
+    background: url(../img/bg.jpg) no-repeat center fixed;
+    background-size: cover;
+}

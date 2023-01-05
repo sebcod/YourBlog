@@ -1,0 +1,52 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "font1";
+    src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+@font-face {
+    font-family: "font2";
+    src: url(../fonts/Merriweather-Light.ttf);
+}
+
+$font1: "font1", sans-serif;
+$font2: "font2", sans-serif;
+$font3: sans-serif;
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin centerColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin whidthCenter {
+    max-width: 900px;
+    margin: auto;
+}
+
+@mixin mobileWhidthCenter {
+    width: 90%;
+    margin: auto;
+}
+
+$backgroundColor1: #fff;
+$backgroundColor2: #ccc;
+$backgroundColor3: rgba(255, 255, 255, 0.247);
+$mobileMediaWhidth: 700px;
+$colorText1: #fff;
+$colorText2: #000;
