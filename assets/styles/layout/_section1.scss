@@ -1,0 +1,60 @@
+.section1 {
+    padding-top: 50px;
+    @include centerColumn;
+    gap: 30px;
+
+    .date {
+        text-transform: capitalize;
+        font-family: $font2;
+        font-style: italic;
+        position: relative;
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 150%;
+            background-color: $backgroundColor2;
+            height: 2px;
+            width: 250px;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 150%;
+            background-color: $backgroundColor2;
+            height: 2px;
+            width: 250px;
+        }
+    }
+
+    h2 {
+        text-transform: uppercase;
+        font-family: $font3;
+        font-size: 2.5rem;
+        width: 500px;
+    }
+
+    p {
+        width: 450px;
+        font-family: $font2;
+        font-style: italic;
+        line-height: 30px;
+    }
+
+    .image {
+        border: solid;
+        background-image: url(../img/pic01.jpg);
+        background-repeat: repeat-y;
+        background-repeat: repeat-x;
+        width: 600px;
+        height: 600px;
+    }
+
+    padding-bottom: 50px;
+    border-bottom: 2px solid $backgroundColor2;
+}

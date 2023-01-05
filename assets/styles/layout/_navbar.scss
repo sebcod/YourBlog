@@ -1,7 +1,50 @@
 nav {
     width: 100%;
-    height: 80px;
+    height: 60px;
     position: absolute;
     bottom: 0;
     background-color: $backgroundColor3;
+    @include center;
+    justify-content: space-between;
+
+    .nav-part-left {
+        display: flex;
+        height: 100%;
+        font-family: $font1;
+        font-weight: bold;
+
+        li {
+            @include center;
+
+            width: 150px;
+            background-color: $backgroundColor3;
+            text-transform: uppercase;
+            font-size: x-small;
+
+            &:hover {
+                background-color: $backgroundColor1;
+                color: $colorText2;
+            }
+
+            &:not(:hover) {
+                background-color: $backgroundColor3;
+                color: $colorText1;
+            }
+
+            &:nth-child(1) {
+                background-color: $backgroundColor1;
+                color: $colorText2;
+            }
+        }
+    }
+
+    .nav-part-right {
+        display: flex;
+        gap: 20px;
+        margin-right: 20px;
+
+        i:hover {
+            transform: scale(1.5);
+        }
+    }
 }

@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 @font-face {
@@ -45,7 +46,7 @@ $font3: sans-serif;
 }
 
 $backgroundColor1: #fff;
-$backgroundColor2: #ccc;
+$backgroundColor2: rgba(204, 204, 204, 0.5);
 $backgroundColor3: rgba(255, 255, 255, 0.247);
 $mobileMediaWhidth: 700px;
 $colorText1: #fff;
