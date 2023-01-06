@@ -2,10 +2,10 @@
 @import "../styles/layout/_header";
 @import "../styles/layout/_navbar";
 @import "../styles/layout/main";
+@import "../styles/components/button";
 @import "../styles/layout/section1";
 @import "../styles/layout/_footer";
 
 body {
-    background: url(../img/pic01.jpg) no-repeat center fixed;
-    background-size: cover;
+    background: url(../img/bg.jpg) center fixed;
 }

@@ -90,7 +90,7 @@ nav .nav-part-left li {
   font-size: x-small;
 }
 nav .nav-part-left li:hover {
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   color: #000;
 }
 nav .nav-part-left li:not(:hover) {
@@ -98,7 +98,7 @@ nav .nav-part-left li:not(:hover) {
   color: #fff;
 }
 nav .nav-part-left li:nth-child(1) {
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   color: #000;
 }
 nav .nav-part-right {
@@ -114,13 +114,26 @@ main {
   max-width: 900px;
   margin: auto;
   height: 1000px;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
 }
 @media screen and (max-width: 700px) {
   main {
     width: 90%;
     margin: auto;
   }
+}
+
+button {
+  border: none;
+  text-decoration: none;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 30px;
+  text-transform: uppercase;
+  font-family: "font1", sans-serif;
+  border: 2px solid black;
+  color: black;
+  font-weight: bolder;
+  cursor: pointer;
 }
 
 .section1 {
@@ -132,7 +145,7 @@ main {
   text-align: center;
   gap: 30px;
   padding-bottom: 50px;
-  border-bottom: 2px solid rgba(204, 204, 204, 0.5);
+  border-bottom: 2px solid rgb(197, 197, 197);
 }
 .section1 .date {
   text-transform: capitalize;
@@ -146,7 +159,7 @@ main {
   position: absolute;
   top: 50%;
   right: 150%;
-  background-color: rgba(204, 204, 204, 0.5);
+  background-color: rgb(197, 197, 197);
   height: 2px;
   width: 250px;
 }
@@ -156,7 +169,7 @@ main {
   position: absolute;
   top: 50%;
   left: 150%;
-  background-color: rgba(204, 204, 204, 0.5);
+  background-color: rgb(197, 197, 197);
   height: 2px;
   width: 250px;
 }
@@ -173,19 +186,16 @@ main {
   line-height: 30px;
 }
 .section1 .image {
-  border: solid;
-  background-image: url(../img/pic01.jpg);
-  background-repeat: repeat-y;
-  background-repeat: repeat-x;
+  background: url(../img/pic01.jpg) center/cover;
   width: 600px;
-  height: 600px;
+  height: 400px;
 }
 
 footer {
   max-width: 900px;
   margin: auto;
   height: 500px;
-  background-color: rgba(204, 204, 204, 0.5);
+  background-color: rgb(197, 197, 197);
   margin-top: 20px;
   margin-bottom: 50px;
 }
@@ -199,6 +209,5 @@ footer {
 }
 
 body {
-  background: url(../img/pic01.jpg) no-repeat center fixed;
-  background-size: cover;
+  background: url(../img/bg.jpg) center fixed;
 }/*# sourceMappingURL=index.css.map */

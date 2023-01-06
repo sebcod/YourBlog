@@ -47,12 +47,9 @@
     }
 
     .image {
-        border: solid;
-        background-image: url(../img/pic01.jpg);
-        background-repeat: repeat-y;
-        background-repeat: repeat-x;
+        background: url(../img/pic01.jpg) center / cover;
         width: 600px;
-        height: 600px;
+        height: 400px;
     }
 
     padding-bottom: 50px;
