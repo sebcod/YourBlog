@@ -1,6 +1,5 @@
 main {
     @include whidthCenter;
-    height: 1000px;
     background-color: $backgroundColor1;
 
     @media screen and (max-width: $mobileMediaWhidth) {

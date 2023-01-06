@@ -1,0 +1,40 @@
+.section2 {
+    display: flex;
+
+    &>div {
+        @include centerColumn;
+        gap: 20px;
+        padding: 40px 5%;
+
+        .date {
+            font-style: italic;
+            text-transform: capitalize;
+        }
+
+        h3 {
+            text-transform: uppercase;
+            font-size: larger;
+        }
+
+        .image {
+            width: 100%;
+            height: 200px;
+        }
+    }
+
+    .left {
+        border-right: solid 1px $backgroundColor2;
+
+        .image {
+            background: url(../img/pic03.jpg) center / cover;
+        }
+    }
+
+    .right {
+        border-left: solid 2px $backgroundColor2;
+
+        .image {
+            background: url(../img/pic02.jpg) center / cover;
+        }
+    }
+}

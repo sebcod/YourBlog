@@ -113,7 +113,6 @@ nav .nav-part-right i:hover {
 main {
   max-width: 900px;
   margin: auto;
-  height: 1000px;
   background-color: rgb(255, 255, 255);
 }
 @media screen and (max-width: 700px) {
@@ -145,7 +144,7 @@ button {
   text-align: center;
   gap: 30px;
   padding-bottom: 50px;
-  border-bottom: 2px solid rgb(197, 197, 197);
+  border-bottom: 2px solid rgb(240, 240, 240);
 }
 .section1 .date {
   text-transform: capitalize;
@@ -159,7 +158,7 @@ button {
   position: absolute;
   top: 50%;
   right: 150%;
-  background-color: rgb(197, 197, 197);
+  background-color: rgb(240, 240, 240);
   height: 2px;
   width: 250px;
 }
@@ -169,7 +168,7 @@ button {
   position: absolute;
   top: 50%;
   left: 150%;
-  background-color: rgb(197, 197, 197);
+  background-color: rgb(240, 240, 240);
   height: 2px;
   width: 250px;
 }
@@ -191,11 +190,48 @@ button {
   height: 400px;
 }
 
+.section2 {
+  display: flex;
+}
+.section2 > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 40px 5%;
+}
+.section2 > div .date {
+  font-style: italic;
+  text-transform: capitalize;
+}
+.section2 > div h3 {
+  text-transform: uppercase;
+  font-size: larger;
+}
+.section2 > div .image {
+  width: 100%;
+  height: 200px;
+}
+.section2 .left {
+  border-right: solid 1px rgb(240, 240, 240);
+}
+.section2 .left .image {
+  background: url(../img/pic03.jpg) center/cover;
+}
+.section2 .right {
+  border-left: solid 2px rgb(240, 240, 240);
+}
+.section2 .right .image {
+  background: url(../img/pic02.jpg) center/cover;
+}
+
 footer {
   max-width: 900px;
   margin: auto;
   height: 500px;
-  background-color: rgb(197, 197, 197);
+  background-color: rgb(240, 240, 240);
   margin-top: 20px;
   margin-bottom: 50px;
 }
