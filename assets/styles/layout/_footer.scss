@@ -96,4 +96,21 @@ footer {
 
     }
 
+    @media screen and (max-width: $mobileMediaWhidth) {
+        display: block;
+
+        &>* {
+            width: 100%;
+        }
+
+        form {
+            border-right: none;
+            border-bottom: 3px solid $backgroundColor2;
+        }
+
+        .contacts {
+            border-left: none;
+        }
+    }
+
 }
