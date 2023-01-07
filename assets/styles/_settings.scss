@@ -7,6 +7,11 @@
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 @font-face {
     font-family: "font1";
     src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
@@ -46,8 +51,10 @@ $font3: sans-serif;
 }
 
 $backgroundColor1: rgb(255, 255, 255);
-$backgroundColor2: rgb(240, 240, 240);
+$backgroundColor2: rgb(212, 211, 211);
 $backgroundColor3: rgba(255, 255, 255, 0.247);
+$backgroundColor4: rgb(230, 230, 230);
+$backgroundColor5: rgb(124, 124, 124);
 $mobileMediaWhidth: 700px;
 $colorText1: #fff;
-$colorText2: #000;
+$colorText2: rgb(31, 31, 31);

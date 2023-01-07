@@ -7,6 +7,11 @@
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 @font-face {
   font-family: "font1";
   src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
@@ -91,7 +96,7 @@ nav .nav-part-left li {
 }
 nav .nav-part-left li:hover {
   background-color: rgb(255, 255, 255);
-  color: #000;
+  color: rgb(31, 31, 31);
 }
 nav .nav-part-left li:not(:hover) {
   background-color: rgba(255, 255, 255, 0.247);
@@ -99,7 +104,7 @@ nav .nav-part-left li:not(:hover) {
 }
 nav .nav-part-left li:nth-child(1) {
   background-color: rgb(255, 255, 255);
-  color: #000;
+  color: rgb(31, 31, 31);
 }
 nav .nav-part-right {
   display: flex;
@@ -108,6 +113,17 @@ nav .nav-part-right {
 }
 nav .nav-part-right i:hover {
   transform: scale(1.5);
+}
+@media screen and (max-width: 700px) {
+  nav .nav-part-right {
+    display: none;
+  }
+  nav .nav-part-left {
+    width: 100%;
+  }
+  nav .nav-part-left li {
+    flex-grow: 1;
+  }
 }
 
 main {
@@ -144,7 +160,7 @@ button {
   text-align: center;
   gap: 30px;
   padding-bottom: 50px;
-  border-bottom: 2px solid rgb(240, 240, 240);
+  border-bottom: 2px solid rgb(212, 211, 211);
 }
 .section1 .date {
   text-transform: capitalize;
@@ -158,7 +174,7 @@ button {
   position: absolute;
   top: 50%;
   right: 150%;
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(212, 211, 211);
   height: 2px;
   width: 250px;
 }
@@ -168,7 +184,7 @@ button {
   position: absolute;
   top: 50%;
   left: 150%;
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(212, 211, 211);
   height: 2px;
   width: 250px;
 }
@@ -214,14 +230,17 @@ button {
   width: 100%;
   height: 200px;
 }
+.section2 > div p {
+  text-align: justify;
+}
 .section2 .left {
-  border-right: solid 1px rgb(240, 240, 240);
+  border-right: solid 1px rgb(212, 211, 211);
 }
 .section2 .left .image {
   background: url(../img/pic03.jpg) center/cover;
 }
 .section2 .right {
-  border-left: solid 2px rgb(240, 240, 240);
+  border-left: solid 2px rgb(212, 211, 211);
 }
 .section2 .right .image {
   background: url(../img/pic02.jpg) center/cover;
@@ -230,10 +249,11 @@ button {
 footer {
   max-width: 900px;
   margin: auto;
-  height: 500px;
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(230, 230, 230);
   margin-top: 20px;
   margin-bottom: 50px;
+  display: flex;
+  font-family: "font1", sans-serif;
 }
 @media screen and (max-width: 700px) {
   footer {
@@ -243,7 +263,77 @@ footer {
     margin-bottom: 50px;
   }
 }
+footer > * {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+footer form {
+  border-right: solid 2px rgb(212, 211, 211);
+  gap: 5px;
+  padding: 30px;
+}
+footer form > * {
+  background-color: rgb(230, 230, 230);
+  border: 1px solid rgb(212, 211, 211);
+  outline-color: rgb(124, 124, 124);
+  height: 30px;
+}
+footer form textarea {
+  resize: none;
+  height: 100px;
+}
+footer form label {
+  border: none;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+footer form button {
+  border-color: rgb(124, 124, 124);
+  background-color: rgb(230, 230, 230);
+  color: rgb(124, 124, 124);
+  width: 180px;
+  height: 40px;
+  margin-top: 30px;
+}
+footer .contacts {
+  border-left: solid 2px rgb(212, 211, 211);
+}
+footer .contacts > * {
+  padding: 30px;
+  display: flex;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 3px solid rgb(212, 211, 211);
+}
+footer .contacts > *:nth-child(1) {
+  border: none;
+}
+footer .contacts > * > :nth-child(1) {
+  width: 30%;
+  text-transform: uppercase;
+}
+footer .contacts > * > :nth-child(2) {
+  width: 70%;
+  color: rgb(124, 124, 124);
+  display: flex;
+}
+footer .contacts > * > :nth-child(2) .iBorder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  color: rgb(31, 31, 31);
+  border: 1px solid rgb(212, 211, 211);
+  border-radius: 50%;
+  margin-right: 10px;
+  offset-position: 50%;
+}
 
 body {
   background: url(../img/bg.jpg) center fixed;
+  color: rgb(31, 31, 31);
 }/*# sourceMappingURL=index.css.map */

@@ -1,7 +1,6 @@
 footer {
     @include whidthCenter;
-    height: 500px;
-    background-color: $backgroundColor2;
+    background-color: $backgroundColor4;
     margin-top: 20px;
     margin-bottom: 50px;
 
@@ -10,4 +9,91 @@ footer {
         margin-top: 20px;
         margin-bottom: 50px;
     }
+
+    display: flex;
+
+    font-family: $font1;
+
+    &>* {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    form {
+        border-right: solid 2px $backgroundColor2;
+        gap: 5px;
+        padding: 30px;
+
+        &>* {
+            background-color: $backgroundColor4;
+            border: 1px solid $backgroundColor2;
+            outline-color: $backgroundColor5;
+            height: 30px;
+        }
+
+        textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        label {
+            border: none;
+            text-transform: uppercase;
+            margin-top: 10px;
+        }
+
+
+
+
+        button {
+            border-color: $backgroundColor5;
+            background-color: $backgroundColor4;
+            color: $backgroundColor5;
+            width: 180px;
+            height: 40px;
+            margin-top: 30px;
+
+        }
+    }
+
+    .contacts {
+        border-left: solid 2px $backgroundColor2;
+
+        &>* {
+            padding: 30px;
+            display: flex;
+            height: 25%;
+            @include center;
+            border-top: 3px solid $backgroundColor2;
+
+            &:nth-child(1) {
+                border: none;
+            }
+
+            &>:nth-child(1) {
+                width: 30%;
+                text-transform: uppercase;
+            }
+
+            &>:nth-child(2) {
+                width: 70%;
+                color: $backgroundColor5;
+                display: flex;
+
+                .iBorder {
+                    @include center;
+                    width: 30px;
+                    height: 30px;
+                    color: $colorText2;
+                    border: 1px solid $backgroundColor2;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                    offset-position: 50%;
+                }
+            }
+        }
+
+    }
+
 }

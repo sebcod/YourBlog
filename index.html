@@ -21,11 +21,13 @@
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
         commodi id autem quisquam exercitationem excepturi.
       </p>
-      <div class="flecheBas">
-        <i class="fa-solid fa-arrow-down"></i>
-      </div>
+      <a href="#navbar"
+        ><div class="flecheBas">
+          <i class="fa-solid fa-arrow-down"></i></div
+      ></a>
+
       <nav>
-        <ul class="nav-part-left">
+        <ul class="nav-part-left" id="navbar">
           <li>this is massively</li>
           <li>generic page</li>
           <li>elements reference</li>
@@ -89,6 +91,44 @@
         </div>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <form action="*">
+        <label for="name">name</label>
+        <input type="text" id="name" />
+        <label for="email">email</label>
+        <input type="text" id="email" />
+        <label for="message">message</label>
+        <textarea name="message" id="message"></textarea>
+        <button type="submit">send message</button>
+      </form>
+
+      <div class="contacts">
+        <div class="address">
+          <h4>address</h4>
+          <p>1234 Somewhere Road #87257 Nashville, TN 00000-0000</p>
+        </div>
+        <div class="phone">
+          <h4>phone</h4>
+          <p>(000)000-0000</p>
+        </div>
+        <div class="email">
+          <h4>email</h4>
+          <p>info@untitled.ltd</p>
+        </div>
+        <div class="social">
+          <h4>social</h4>
+          <div class="i">
+            <a href="" class="iBorder"><i class="fa-brands fa-twitter"></i></a>
+            <a href="" class="iBorder"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="" class="iBorder"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="" class="iBorder"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

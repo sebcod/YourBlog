@@ -47,4 +47,19 @@ nav {
             transform: scale(1.5);
         }
     }
+
+    @media screen and (max-width: $mobileMediaWhidth) {
+        .nav-part-right {
+            display: none;
+        }
+
+        .nav-part-left {
+            width: 100%;
+
+            li {
+                flex-grow: 1;
+            }
+
+        }
+    }
 }
