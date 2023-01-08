@@ -7,6 +7,10 @@
     list-style: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -58,3 +62,26 @@ $backgroundColor5: rgb(124, 124, 124);
 $mobileMediaWhidth: 700px;
 $colorText1: #fff;
 $colorText2: rgb(31, 31, 31);
+
+body {
+    background: url(../img/bg.jpg) center fixed no-repeat;
+    color: $colorText2;
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: black;
+        animation: animBefore 1.5s ease forwards;
+        animation-delay: 0.15s;
+    }
+
+    @keyframes animBefore {
+        to {
+            opacity: 0;
+        }
+    }
+}

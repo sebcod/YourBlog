@@ -7,6 +7,10 @@
   list-style: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -20,6 +24,34 @@ a {
   font-family: "font2";
   src: url(../fonts/Merriweather-Light.ttf);
 }
+body {
+  background: url(../img/bg.jpg) center fixed no-repeat;
+  color: rgb(31, 31, 31);
+}
+body::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: black;
+  -webkit-animation: animBefore 1.5s ease forwards;
+          animation: animBefore 1.5s ease forwards;
+  -webkit-animation-delay: 0.15s;
+          animation-delay: 0.15s;
+}
+@-webkit-keyframes animBefore {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes animBefore {
+  to {
+    opacity: 0;
+  }
+}
+
 header {
   height: 100vh;
   max-width: 900px;
@@ -32,6 +64,22 @@ header {
   align-items: center;
   text-align: center;
   gap: 50px;
+  opacity: 0;
+  transform: translateY(40px);
+  -webkit-animation: headerAnim 1.5s forwards;
+          animation: headerAnim 1.5s forwards;
+}
+@-webkit-keyframes headerAnim {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes headerAnim {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 header h1 {
   text-transform: uppercase;
@@ -92,6 +140,10 @@ nav .nav-part-left {
   font-family: "font1", sans-serif;
   font-weight: bold;
 }
+nav .nav-part-left:hover li:not(:hover) {
+  background-color: rgba(255, 255, 255, 0.247);
+  color: #fff;
+}
 nav .nav-part-left li {
   display: flex;
   justify-content: center;
@@ -104,10 +156,6 @@ nav .nav-part-left li {
 nav .nav-part-left li:hover {
   background-color: rgb(255, 255, 255);
   color: rgb(31, 31, 31);
-}
-nav .nav-part-left li:not(:hover) {
-  background-color: rgba(255, 255, 255, 0.247);
-  color: #fff;
 }
 nav .nav-part-left li:nth-child(1) {
   background-color: rgb(255, 255, 255);

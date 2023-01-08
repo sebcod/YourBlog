@@ -6,6 +6,17 @@ header {
     @include centerColumn;
     gap: 50px;
 
+    opacity: 0;
+    transform: translateY(40px);
+    animation: headerAnim 1.5s forwards;
+
+    @keyframes headerAnim {
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
     h1 {
         text-transform: uppercase;
         font-size: 3rem;

@@ -13,6 +13,11 @@ nav {
         font-family: $font1;
         font-weight: bold;
 
+        &:hover li:not(:hover) {
+            background-color: $backgroundColor3;
+            color: $colorText1;
+        }
+
         li {
             @include center;
 
@@ -24,11 +29,6 @@ nav {
             &:hover {
                 background-color: $backgroundColor1;
                 color: $colorText2;
-            }
-
-            &:not(:hover) {
-                background-color: $backgroundColor3;
-                color: $colorText1;
             }
 
             &:nth-child(1) {
