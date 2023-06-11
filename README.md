@@ -9,6 +9,6 @@ https://sebcod-your-blog.netlify.app/
 [![Sass](https://img.shields.io/badge/-Sass-000?&logo=Sass&logoColor=CC6699)](https://sass-lang.com)
 
 <p align="center">
-  <img src="assets/img/maquette-desktop.png" height="350" alt="Thumbnail your blog desktop" title="Your blog desktop">
-  <img src="assets/img/maquette-mobile.png" height="350" alt="Thumbnail jour blog mobile" title="Your blog mobile">
+  <img src="assets/img/YourBlog.jpg" height="350" alt="Thumbnail your blog desktop" title="Your blog desktop">
+  <img src="assets/img/YourBlogMobile.jpg" height="350" alt="Thumbnail jour blog mobile" title="Your blog mobile">
 </p>
