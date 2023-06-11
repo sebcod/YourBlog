@@ -36,15 +36,8 @@ body::before {
   top: 0;
   left: 0;
   background: black;
-  -webkit-animation: animBefore 1.5s ease forwards;
-          animation: animBefore 1.5s ease forwards;
-  -webkit-animation-delay: 0.15s;
-          animation-delay: 0.15s;
-}
-@-webkit-keyframes animBefore {
-  to {
-    opacity: 0;
-  }
+  animation: animBefore 1.5s ease forwards;
+  animation-delay: 0.15s;
 }
 @keyframes animBefore {
   to {
@@ -66,14 +59,7 @@ header {
   gap: 50px;
   opacity: 0;
   transform: translateY(40px);
-  -webkit-animation: headerAnim 1.5s forwards;
-          animation: headerAnim 1.5s forwards;
-}
-@-webkit-keyframes headerAnim {
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+  animation: headerAnim 1.5s forwards;
 }
 @keyframes headerAnim {
   to {
@@ -447,9 +433,4 @@ footer .contacts > * > :nth-child(2) .iBorder {
   footer .contacts {
     border-left: none;
   }
-}
-
-body {
-  background: url(../img/bg.jpg) center fixed no-repeat;
-  color: rgb(31, 31, 31);
 }/*# sourceMappingURL=index.css.map */
