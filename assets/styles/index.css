@@ -100,6 +100,10 @@ header .flecheBas:not(:hover) {
     width: 100%;
     margin: auto;
   }
+  header h1 {
+    width: max-content;
+    font-size: 10vw;
+  }
   header .flecheBas {
     margin-top: 50px;
     transform: scale(300%);
@@ -248,7 +252,7 @@ button {
 }
 @media screen and (max-width: 700px) {
   .section1 {
-    padding: 60px 40px 60px;
+    padding: 40px 0px 40px;
   }
   .section1 .date {
     margin-bottom: 50px;
@@ -314,7 +318,7 @@ button {
 }
 @media screen and (max-width: 700px) {
   .section2 {
-    padding: 60px 40px 60px;
+    padding: 40px 0px 40px;
     display: block;
   }
   .section2 .left {
@@ -326,6 +330,9 @@ button {
     border: none;
     padding: 40px 0px 40px;
     gap: 40px;
+  }
+  .section2 p {
+    padding: 20px;
   }
   .section2 > div .image {
     width: 100%;
